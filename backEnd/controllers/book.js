@@ -84,7 +84,7 @@ exports.deleteBook = (req, res, next) => {
 
 //verif
 exports.addRating = (req, res, next) => {
-  const { userId, grade } = req.body;
+  const { userId, rating } = req.body;
 
   Book.findOne({ _id: req.params.id })
     .then((book) => {
